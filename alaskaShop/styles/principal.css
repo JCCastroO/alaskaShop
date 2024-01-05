@@ -51,3 +51,62 @@
     border: 1px solid var(--cor-extra);
     background-color: var(--cor-extra);
 }
+
+.principal__novoProduto {
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-shrink: 1;
+    gap: 1rem;
+}
+
+.principal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-produto,
+.form-preco,
+.form-img {
+    border-radius: 0.5rem;
+    border: none;
+    width: 30rem;
+    height: 1.5rem;
+    padding: 0.5rem;
+}
+
+.form-produto:hover,
+.form-preco:hover,
+.form-img:hover {
+    border: 3px solid var(--cor-terciaria);
+}
+
+.form-produto:focus,
+.form-preco:focus,
+.form-img:focus {
+    border: 2px solid var(--cor-terciaria);
+}
+
+.form-btnAdd {
+    border-radius: 0.5rem;
+    border: 1px solid var(--cor-terciaria);
+    width: 30rem;
+    height: 1.5rem;
+    background-color: var(--cor-terciaria);
+    font-size: 14px;
+    text-align: center;
+}
+
+.form-btnAdd:hover {
+    border: 1px solid var(--cor-extra);
+    background-color: var(--cor-extra);
+}

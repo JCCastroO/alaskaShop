@@ -62,6 +62,20 @@
     background-color: var(--cor-extra);
 }
 
+.navegacao-novoProduto {
+    border: 1px solid var(--cor-extra);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navegacao-novoProduto:hover {
+    border: 1px solid var(--cor-terciaria);
+    color: var(--cor-terciaria);
+}
+
 .login {
     background-color: var(--cor-terciaria);
     border-radius: 0.5rem;
