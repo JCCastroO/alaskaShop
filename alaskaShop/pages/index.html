@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Alaska Shop</title>
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/rodape.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/principal.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img class="cabecalho__img" src="../images/logo.png" alt="Logo do Alaska Shop" width="200px">
+        <form class="cabecalho__formulario">
+            <input class="form-busca" type="search">
+            <button class="form-pesquisar"><img src="../images/lupa.png" alt="Lupa" width="10px"></button>
+        </form>
+        <nav class="cabecalho__navegacao">
+            <a href="index.html">Página inicial</a>
+            <a href="contato.html">Contato</a>
+            <button class="navegacao-login">Login</button>
+            <button class="navegacao-cadastro">Cadastro</button>
+        </nav>
+
+        <div class="login hidden" data-login>
+            <form class="login__form">
+                <input name="nome" type="text" required data-loginNome>
+                <input name="senha" type="password" required data-loginSenha>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <div class="login hidden" data-cadastro>
+            <form class="login__form">
+                <input name="nome" type="text" required data-cadastroNome>
+                <input name="senha" type="password" required data-cadastroSenha>
+                <input type="submit" value="Cadastro">
+            </form>
+        </div>
+    </header>
+
+    <aside class="menu">
+        <button>Toucas</button>
+        <button>Cachecol</button>
+        <button>Moletons</button>
+        <button>Camisetas</button>
+        <button>Luvas</button>
+        <button>Calças</button>
+        <button>Meias</button>
+        <button>Botas</button>
+    </aside>
+
+    <main class="principal">
+        <div class="produto">
+            <img src="../images/download.png" alt="Foto do produto" class="produto-img">
+            <h2 class="produto-titulo">Nome do produto</h2>
+            <p class="produto-preco">R$00,00</p>
+            <button class="produto-btn">Verificar</button>
+        </div>
+
+        <div class="produto">
+            <img src="../images/download.png" alt="Foto do produto" class="produto-img">
+            <h2 class="produto-titulo">Nome do produto</h2>
+            <p class="produto-preco">R$00,00</p>
+            <button class="produto-btn">Verificar</button>
+        </div>
+
+        <div class="produto">
+            <img src="../images/download.png" alt="Foto do produto" class="produto-img">
+            <h2 class="produto-titulo">Nome do produto</h2>
+            <p class="produto-preco">R$00,00</p>
+            <button class="produto-btn">Verificar</button>
+        </div>
+
+        <div class="produto">
+            <img src="../images/download.png" alt="Foto do produto" class="produto-img">
+            <h2 class="produto-titulo">Nome do produto</h2>
+            <p class="produto-preco">R$00,00</p>
+            <button class="produto-btn">Verificar</button>
+        </div>
+
+        <div class="produto">
+            <img src="../images/download.png" alt="Foto do produto" class="produto-img">
+            <h2 class="produto-titulo">Nome do produto</h2>
+            <p class="produto-preco">R$00,00</p>
+            <button class="produto-btn">Verificar</button>
+        </div>
+
+        <div class="produto">
+            <img src="../images/download.png" alt="Foto do produto" class="produto-img">
+            <h2 class="produto-titulo">Nome do produto</h2>
+            <p class="produto-preco">R$00,00</p>
+            <button class="produto-btn">Verificar</button>
+        </div>
+
+        <div class="produto">
+            <img src="../images/download.png" alt="Foto do produto" class="produto-img">
+            <h2 class="produto-titulo">Nome do produto</h2>
+            <p class="produto-preco">R$00,00</p>
+            <button class="produto-btn">Verificar</button>
+        </div>
+
+        <div class="produto">
+            <img src="../images/download.png" alt="Foto do produto" class="produto-img">
+            <h2 class="produto-titulo">Nome do produto</h2>
+            <p class="produto-preco">R$00,00</p>
+            <button class="produto-btn">Verificar</button>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <h2>Desenvolvido por <a href="https://www.linkedin.com/in/joão-carlos-de-castro-oliveira/">João Carlos</a> sem
+            fins lucrativos!</h2>
+    </footer>
+
+
+    <script src="../apps/menuLogin.js"></script>
+</body>
+
+</html>
