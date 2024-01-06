@@ -74,6 +74,11 @@
     align-items: center;
 }
 
+.principal__form label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
 .form-produto,
 .form-preco,
 .form-img {
@@ -84,15 +89,25 @@
     padding: 0.5rem;
 }
 
+.form-categoria {
+    border-radius: 0.5rem;
+    border: none;
+    width: 30rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+}
+
 .form-produto:hover,
 .form-preco:hover,
-.form-img:hover {
+.form-img:hover,
+.form-categoria:hover {
     border: 3px solid var(--cor-terciaria);
 }
 
 .form-produto:focus,
 .form-preco:focus,
-.form-img:focus {
+.form-img:focus,
+.form-categoria:focus {
     border: 2px solid var(--cor-terciaria);
 }
 
@@ -100,9 +115,9 @@
     border-radius: 0.5rem;
     border: 1px solid var(--cor-terciaria);
     width: 30rem;
-    height: 1.5rem;
+    height: 2rem;
     background-color: var(--cor-terciaria);
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
 }
 

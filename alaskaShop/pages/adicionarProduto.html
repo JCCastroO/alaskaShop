@@ -38,9 +38,24 @@
 
     <main class="principal__novoProduto">
         <form class="principal__form">
+            <label for="produto">Produto</label>
             <input type="text" name="produto" class="form-produto" required placeholder="Digite o nome do seu produto">
-            <input type="text" name="preco" class="form-preco" required placeholder="Digite o preço do seu produto Ex.: R$00,00">
+            <label for="preco">Preço</label>
+            <input type="number" name="preco" class="form-preco" required placeholder="Digite o preço do seu produto Ex.: 00,00">
+            <label for="img">Imagem</label>
             <input type="text" name="img" class="form-img" required placeholder="Digite o link para a imagem que deseja apresentar o seu produto">
+            <label for="categoria">Categoria</label>
+            <select name="categoria" class="form-categoria" required>
+                <option value="" disabled selected>Selecione uma categoria para seu produto</option>
+                <option value="Toucas">Toucas</option>
+                <option value="Cachecol">Cachecol</option>
+                <option value="Moletons">Moletons</option>
+                <option value="Camisetas">Camisetas</option>
+                <option value="Luvas">Luvas</option>
+                <option value="Calças">Calças</option>
+                <option value="Meias">Meias</option>
+                <option value="Botas">Botas</option>
+            </select>
             <input type="submit" class="form-btnAdd">
         </form>
     </main>
@@ -51,8 +66,7 @@
     </footer>
 
 
-    <script src="../apps/menuSair.js"></script>
-    <script src="../apps/cardProdutos.js"></script>
+    <script src="../apps/adicionarProduto.js"></script>
 </body>
 
 </html>
