@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Alaska Shop</title>
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/rodape.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/principal.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img class="cabecalho__img" src="../images/logo.png" alt="Logo do Alaska Shop" width="200px">
+        <form class="cabecalho__formulario">
+            <input class="form-busca" type="search">
+            <button class="form-pesquisar"><img src="../images/lupa.png" alt="Lupa" width="10px"></button>
+        </form>
+        <nav class="cabecalho__navegacao">
+            <a href="home.html">Página inicial</a>
+            <a href="contatoLogado.html">Contato</a>
+            <button class="navegacao-novoProduto">Novo Produto</button>
+            <button class="navegacao-login">Logado</button>
+        </nav>
+
+        <div class="login hidden" data-logado>
+            <form class="login__form">
+                <a href="./index.html">Sair</a>
+            </form>
+        </div>
+    </header>
+
+    <aside class="menu">
+        <button class="categoria">Toucas</button>
+        <button class="categoria">Cachecol</button>
+        <button class="categoria">Moletons</button>
+        <button class="categoria">Camisetas</button>
+        <button class="categoria">Luvas</button>
+        <button class="categoria">Calças</button>
+        <button class="categoria">Meias</button>
+        <button class="categoria">Botas</button>
+    </aside>
+
+    <main class="principal">
+    </main>
+
+    <footer class="rodape">
+        <h2>Desenvolvido por <a href="https://www.linkedin.com/in/joão-carlos-de-castro-oliveira/">João Carlos</a> sem
+            fins lucrativos!</h2>
+    </footer>
+
+
+    <script src="../apps/home.js"></script>
+    <script src="../apps/exibirProduto.js"></script>
+</body>
+
+</html>
