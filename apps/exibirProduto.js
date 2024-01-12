@@ -26,7 +26,7 @@ const categorias = document.querySelectorAll('[data-categoria]');
 
 categorias.forEach(categoria => {
     categoria.addEventListener('click', () => {
-        for (let i = 0; i <= listaProdutos.length - 1; i++) {
+        for (let i = 0; i <= divsProdutos.length - 1; i++) {
             const filtro = categoria.innerHTML;
             const produtos = divsProdutos[i].childNodes[7].innerHTML;
             const produto = divsProdutos[i];
@@ -46,7 +46,7 @@ const formBusca = document.querySelector('.cabecalho__formulario');
 formBusca.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    for (let i = 0; i <= listaProdutos.length - 1; i++) {
+    for (let i = 0; i <= divsProdutos.length - 1; i++) {
         const pesquisa = formBusca.childNodes[1].value.toLowerCase();
         const produtos = divsProdutos[i].childNodes[3].innerHTML.toLowerCase();
         const produto = divsProdutos[i];

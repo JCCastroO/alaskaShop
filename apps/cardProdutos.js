@@ -6,7 +6,7 @@ const btnX = document.querySelector('.fecharCard')
 btnVerificar.forEach(botao => {
     botao.addEventListener('click', () => {
         cardFundo.classList.toggle('hidden')
-        card.style.display = 'flex';
+        card.style.display = 'grid';
     })
     
 })
