@@ -34,7 +34,7 @@ categorias.forEach(categoria => {
             if (filtro != produtos && filtro != 'Todos') {
                 produto.style.display = "none";
             } else {
-                produto.style.display = "block";
+                produto.style.display = "grid";
             }
         }
         
@@ -54,7 +54,7 @@ formBusca.addEventListener('submit', (e) => {
         if (pesquisa != produtos && pesquisa != 'Todos' && pesquisa != '') {
             produto.style.display = "none";
         } else {
-            produto.style.display = "block";
+            produto.style.display = "grid";
         }
     }
 })
