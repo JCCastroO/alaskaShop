@@ -42,7 +42,7 @@ menuLogin.addEventListener('submit', (e) => {
     e.preventDefault();
 
     if (localStorage.login.includes(loginNome.value) && localStorage.login.includes(loginSenha.value)) {
-        window.location.href = './home.html';
+        window.location.href = './pages/home.html';
     } else {
         alert('Login não existe!')
     }
