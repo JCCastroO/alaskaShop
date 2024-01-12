@@ -1,25 +1,17 @@
+const btnVerificar = document.querySelectorAll('.produto-btn')
+const cardFundo = document.querySelector('.background')
+const card = document.querySelector('.card')
+const btnX = document.querySelector('.fecharCard')
 
-const formNovo = document.querySelector('.principal__form');
-const produto = document.querySelector('.form-produto');
-const preco = document.querySelector('.form-preco');
-const img = document.querySelector('.form-img');
+btnVerificar.forEach(botao => {
+    botao.addEventListener('click', () => {
+        cardFundo.classList.toggle('hidden')
+        card.style.display = 'flex';
+    })
+    
+})
 
-const listaProdutos = JSON.parse(localStorage.getItem('produto')) || [];
-
-formNovo.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const cadastroProduto = {
-        'produto': e.target.elements['produto'].value,
-        'preco': e.target.elements['preco'].value,
-        'img': e.target.elements['img'].value
-    }
-
-    listaProdutos.push(cadastroProduto);
-
-    localStorage.setItem('produto', JSON.stringify(listaProdutos));
-
-    produto.value = '';
-    preco.value = '';
-    img.value = '';
+btnX.addEventListener('click', () => {
+    cardFundo.classList.toggle('hidden')
+        card.style.display = 'none';
 })

@@ -4,24 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Alaska Shop</title>
 
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/rodape.css">
-    <link rel="stylesheet" href="../styles/menu.css">
-    <link rel="stylesheet" href="../styles/principal.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/rodape.css">
+    <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/principal.css">
 </head>
 
 <body>
 
+        <div class="background hidden"></div>
+        <section class="card">
+            <button class="fecharCard">X</button>
+
+        </section>
+
     <header class="cabecalho">
-        <img class="cabecalho__img" src="../images/logo.png" alt="Logo do Alaska Shop" width="200px">
+        <img class="cabecalho__img" src="./images/logo.png" alt="Logo do Alaska Shop" width="200px">
         <form class="cabecalho__formulario">
             <input class="form-busca" type="search">
-            <button class="form-pesquisar"><img src="../images/lupa.png" alt="Lupa" width="10px"></button>
+            <button class="form-pesquisar"><img src="./images/lupa.png" alt="Lupa" width="10px"></button>
         </form>
         <nav class="cabecalho__navegacao">
             <a href="./index.html">Página inicial</a>
@@ -67,8 +73,9 @@
     </footer>
 
 
-    <script src="../apps/index.js"></script>
-    <script src="../apps/exibirProduto.js"></script>
+    <script src="./apps/index.js"></script>
+    <script src="./apps/exibirProduto.js"></script>
+    <script src="./apps/cardProdutos.js"></script>
 </body>
 
 </html>
