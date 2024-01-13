@@ -49,13 +49,24 @@ a:hover {
     height: 80%;
     margin: 5rem 11rem;
     display: none;
-    position: fixed;
+    position: absolute;
     background-color: var(--cor-card);
     border-radius: 1rem;
     opacity: 1;
     justify-content: center;
     text-align: center;
     align-items: center;
+    padding: 0 2rem;
+    grid-template-areas: 
+    "fechar fechar fechar fechar fechar fechar fechar fechar"
+    "img img img img titulo titulo titulo titulo"
+    "img img img img titulo titulo titulo titulo"
+    "img img img img descri descri descri descri"
+    "img img img img descri descri descri descri"
+    "img img img img quanti quanti preco preco"
+    "img img img img carrin carrin compra compra"
+    "img img img img carrin carrin compra compra"
+    ;
 }
 
 .fecharCard {
@@ -65,18 +76,12 @@ a:hover {
     background-color: var(--cor-terciaria);
     font-size: 14px;
     font-weight: 700;
-    grid-area: 1 / 1 / 2 / 9;
+    grid-area: fechar;
+    
 }
 
 /*8 linhas e 8 colunas
-    fechar fechar fechar fechar fechar fechar fechar fechar
-    img--- img--- img--- img--- titulo titulo titulo titulo
-    img--- img--- img--- img--- titulo titulo titulo titulo
-    img--- img--- img--- img--- descri descri descri descri
-    img--- img--- img--- img--- descri descri descri descri
-    img--- img--- img--- img--- quanti quanti preco- preco-
-    img--- img--- img--- img--- carrin carrin compra compra
-    img--- img--- img--- img--- carrin carrin compra compra
+    
 */ 
 
 .fecharCard:hover {
@@ -85,30 +90,59 @@ a:hover {
 }
 
 .card-img {
-    grid-area: 2 / 1 / 9 / 5;
-    width: 35rem;
+    grid-area: img;
+    width: 30rem;
 }
 
 .card-titulo {
-    grid-area: 2 / 5 / 4 / 9;
+    grid-area: titulo;
+    margin-bottom: 1rem;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .card-preco {
-    grid-area: 6 / 8 / 7 / 9;
+    grid-area: preco;
+    margin-bottom: 1rem;
+    font-size: 18px;
 }
 
 .card-descricao {
-    grid-area: 4 / 5 / 6 / 9;
+    grid-area: descri;
+    margin-bottom: 1rem;
+    font-size: 18px;
 }
 
 .card-quantidade {
-    grid-area: 6 / 5 / 7 / 7;
+    grid-area: quanti;
+    margin-bottom: 1rem;
+    font-size: 18px;
 }
 
 .cardCarrinho-btn {
-    grid-area: 7 / 5 / 8 / 7;
+    grid-area: carrin;
+    margin: 0 1rem;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--cor-terciaria);
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .cardCompra-btn {
-    grid-area: 7 / 7 / 8 / 9;
+    grid-area: compra;
+    margin: 0 1rem;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--cor-terciaria);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cardCarrinho-btn:hover,
+.cardCompra-btn:hover{
+    border: 1px solid var(--cor-extra);
+    background-color: var(--cor-extra);
 }

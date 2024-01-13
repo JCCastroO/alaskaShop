@@ -1,5 +1,4 @@
 .principal {
-    height: 100vh;
     background-color: var(--cor-secundaria);
     display: flex;
     justify-content: center;
@@ -79,9 +78,7 @@
     font-weight: 700;
 }
 
-.form-produto,
-.form-preco,
-.form-img {
+.formAdd {
     border-radius: 0.5rem;
     border: none;
     width: 30rem;
@@ -97,16 +94,12 @@
     padding: 0.5rem;
 }
 
-.form-produto:hover,
-.form-preco:hover,
-.form-img:hover,
+.formAdd:hover,
 .form-categoria:hover {
     border: 3px solid var(--cor-terciaria);
 }
 
-.form-produto:focus,
-.form-preco:focus,
-.form-img:focus,
+.formAdd:focus,
 .form-categoria:focus {
     border: 2px solid var(--cor-terciaria);
 }

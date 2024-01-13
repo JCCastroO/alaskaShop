@@ -5,12 +5,14 @@ const listaProdutos = JSON.parse(localStorage.getItem('produto')) || [];
 
 function exibirProduto(produto) {
     section.innerHTML += `
-        <div class="produto">
+        <div class="produto"">
             <img src="${produto.img}" alt="Foto do produto" class="produto-img">
             <h2 class="produto-titulo">${produto.produto}</h2>
             <p class="produto-preco">R$${produto.preco}</p>
             <p class="produto-categoria" hidden>${produto.categoria}</p>
-            <button class="produto-btn">Verificar</button>
+            <p class="produto-descricao" hidden>${produto.descricao}</p>
+            <p class="produto-quantidade" hidden>${produto.quantidade}</p>
+            <button class="produto-btn id="${produto.id}">Verificar</button>
         </div>
     `;
 
@@ -48,7 +50,7 @@ formBusca.addEventListener('submit', (e) => {
 
     for (let i = 0; i <= divsProdutos.length - 1; i++) {
         const pesquisa = formBusca.childNodes[1].value.toLowerCase();
-        const produtos = divsProdutos[i].childNodes[3].innerHTML.toLowerCase();
+        const produtos = [divsProdutos[i].childNodes[3].innerHTML.toLowerCase()];
         const produto = divsProdutos[i];
 
         if (pesquisa != produtos && pesquisa != 'Todos' && pesquisa != '') {

@@ -39,11 +39,15 @@
     <main class="principal__novoProduto">
         <form class="principal__form">
             <label for="produto">Produto</label>
-            <input type="text" name="produto" class="form-produto" required placeholder="Digite o nome do seu produto">
+            <input type="text" name="produto" class="formAdd" required placeholder="Descreva o nome do seu produto">
             <label for="preco">Preço</label>
-            <input type="number" name="preco" class="form-preco" required placeholder="Digite o preço do seu produto Ex.: 00,00">
+            <input type="number" name="preco" class="formAdd" required placeholder="Informe o valor do seu produto sem 'R$' Ex.: 00,00">
+            <label for="descricao">Descrição</label>
+            <input type="text" name="descricao" class="formAdd" required placeholder="Descreva seu produto">
+            <label for="quantidade">Quantidade</label>
+            <input type="number" name="quantidade" class="formAdd" required placeholder="Informe quantos produtos você tem em estoque para a venda">
             <label for="img">Imagem</label>
-            <input type="text" name="img" class="form-img" required placeholder="Digite o link para a imagem que deseja apresentar o seu produto">
+            <input type="text" name="img" class="formAdd" required placeholder="Informe o link para a imagem que deseja apresentar o seu produto">
             <label for="categoria">Categoria</label>
             <select name="categoria" class="form-categoria" required>
                 <option value="" disabled selected>Selecione uma categoria para seu produto</option>
