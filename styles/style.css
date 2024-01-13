@@ -64,8 +64,8 @@ a:hover {
     "img img img img descri descri descri descri"
     "img img img img descri descri descri descri"
     "img img img img quanti quanti preco preco"
-    "img img img img carrin carrin compra compra"
-    "img img img img carrin carrin compra compra"
+    "img img img img carrin carrin carrin carrin"
+    "img img img img carrin carrin carrin carrin"
     ;
 }
 
@@ -126,19 +126,7 @@ a:hover {
     font-weight: 700;
 }
 
-.cardCompra-btn {
-    grid-area: compra;
-    margin: 0 1rem;
-    border: 1px solid var(--cor-terciaria);
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    background-color: var(--cor-terciaria);
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.cardCarrinho-btn:hover,
-.cardCompra-btn:hover{
+.cardCarrinho-btn:hover {
     border: 1px solid var(--cor-extra);
     background-color: var(--cor-extra);
 }

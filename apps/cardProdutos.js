@@ -24,7 +24,6 @@ function exibirCard(produto) {
         <p class="card-descricao"><strong>Descrição: </strong><br>${descricaoProduto}</p>
         <p class="card-quantidade"><strong>Quantidade: </strong><span data-quantidade>${quantidadeProduto}</span></p>
         <button class="cardCarrinho-btn">Adicionar ao carrinho</button>
-        <button class="cardCompra-btn">Comprar</button>
         `;
 
         const btnX = document.querySelector('.fecharCard');
@@ -48,7 +47,6 @@ function exibirCard(produto) {
             listaCarrinho.push(addListaCarrinho);
             produtosNum.innerText = `${listaCarrinho.length}`
         })
-        const comprar = document.querySelectorAll('.cardCompra-btn');
     
 }
 
