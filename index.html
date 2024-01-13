@@ -17,10 +17,14 @@
 
 <body>
 
-        <div class="background hidden"></div>
-        <section class="card">
-            
-        </section>
+    <div class="background hidden"></div>
+    <section class="card">
+
+    </section>
+    <section class="cardCarrinho">
+        <button class="fecharCarrinho">X</button>
+        <button class="carrinhoCompra-btn">Comprar</button>
+    </section>
 
     <header class="cabecalho">
         <img class="cabecalho__img" src="./images/logo.png" alt="Logo do Alaska Shop" width="200px">
@@ -29,7 +33,11 @@
             <button class="form-pesquisar"><img src="./images/lupa.png" alt="Lupa" width="10px"></button>
         </form>
         <nav class="cabecalho__navegacao">
-            <a href="./index.html">Página inicial</a>
+            <div class="carrinho">
+                <img class="carrinhoImg" src="./images/Carrinho.png" alt="Carrinho">
+                <p class="carrinhoNum"></p>
+            </div>
+            <a href="./index.html">Loja</a>
             <a href="./pages/contato.html">Contato</a>
             <button class="navegacao-login">Login</button>
             <button class="navegacao-cadastro">Cadastro</button>
@@ -65,7 +73,7 @@
 
     <main class="principal">
         <div class="produto">
-            <img src="../images/Touca.png" alt="Foto do produto" class="produto-img">
+            <img src="./images/Touca.png" alt="Foto do produto" class="produto-img">
             <h2 class="produto-titulo">Touca</h2>
             <p class="produto-preco">R$10,00</p>
             <p class="produto-categoria" hidden>Toucas</p>
@@ -146,7 +154,8 @@
 
     <script src="./apps/index.js"></script>
     <script src="./apps/exibirProduto.js"></script>
-    <script src="./apps/cardProdutos.js"></script>
+    <script src="./apps/cardProdutos.js" type="module"></script>
+    <script src="./apps/carrinhoCompra.js" type="module"></script>
 </body>
 
 </html>

@@ -41,8 +41,22 @@
 
 .cabecalho__navegacao {
     display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 1rem;
+}
+
+.carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.carrinhoImg {
+    width: 3rem;
 }
 
 .navegacao-login,
