@@ -1,20 +1,22 @@
 const section = document.querySelector('.principal');
 
 
-const listaProdutos = JSON.parse(localStorage.getItem('produto')) || [];
+var listaProdutos = JSON.parse(localStorage.getItem('produto')) || [];
 
 function exibirProduto(produto) {
-    section.innerHTML += `
-        <div class="produto"">
-            <img src="${produto.img}" alt="Foto do produto" class="produto-img">
-            <h2 class="produto-titulo">${produto.produto}</h2>
-            <p class="produto-preco">R$${produto.preco}</p>
-            <p class="produto-categoria" hidden>${produto.categoria}</p>
-            <p class="produto-descricao" hidden>${produto.descricao}</p>
-            <p class="produto-quantidade" hidden>${produto.quantidade}</p>
-            <button class="produto-btn id="${produto.id}">Verificar</button>
-        </div>
-    `;
+    if (produto.quantidade > 0) {
+        section.innerHTML += `
+            <div class="produto"">
+                <img src="${produto.img}" alt="Foto do produto" class="produto-img">
+                <h2 class="produto-titulo">${produto.produto}</h2>
+                <p class="produto-preco">R$${produto.preco}</p>
+                <p class="produto-categoria" hidden>${produto.categoria}</p>
+                <p class="produto-descricao" hidden>${produto.descricao}</p>
+                <p class="produto-quantidade" hidden>${produto.quantidade}</p>
+                <button class="produto-btn" id="${produto.id}">Verificar</button>
+            </div>
+        `;
+    }
 
     
 }

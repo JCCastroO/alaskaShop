@@ -30,6 +30,10 @@ a:hover {
     color: var(--cor-extra);
 }
 
+button {
+    cursor: pointer;
+}
+
 
 .hidden {
     display: none;
@@ -88,6 +92,8 @@ a:hover {
 .card-img {
     grid-area: img;
     width: 30rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
 }
 
 .card-titulo {
@@ -142,6 +148,8 @@ a:hover {
     opacity: 1;
     text-align: center;
     padding: 0 2rem;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .fecharCarrinho {
@@ -162,19 +170,36 @@ a:hover {
 .produtoCarrinho {
     display: grid;
     grid-template-areas: 
-    "btn btn btn btn btn btn"
-    "imagem imagem imagem nome nome excluir"
-    "imagem imagem imagem valor valor texto"
-    "imagem imagem imagem qtd qtd comprar"
+    "imagem imagem imagem nome excluir excluir"
+    "imagem imagem imagem valor texto texto"
+    "imagem imagem imagem qtd btn btn"
     ;
     text-align: center;
     align-items: center;
     border-bottom: 1px solid var(--cor-fonte);
 }
 
+.excluirItem {
+    grid-area: btn;
+    margin: 0 0 0 auto;
+    border: 1px solid var(--cor-extra);
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    background-color: var(--cor-extra);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.excluirItem:hover {
+    border: 1px solid var(--cor-terciaria);
+    background-color: var(--cor-terciaria);
+}
+
 .produtoImgCarrinho {
     grid-area: imagem;
     width: 10rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
 }
 
 .produtoNomeCarrinho {
@@ -202,9 +227,16 @@ a:hover {
     font-size: 18px;
 }
 
-.carrinhoCompra-btn {
-    grid-area: comprar;
-    margin: 0 1rem;
+.btnsCarrinho {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.carrinhoCompra-btn,
+.carrinhoLimpar-btn {
     border: 1px solid var(--cor-terciaria);
     border-radius: 0.5rem;
     padding: 0.5rem;
@@ -213,7 +245,8 @@ a:hover {
     font-weight: 700;
 }
 
-.carrinhoCompra-btn:hover{
+.carrinhoCompra-btn:hover,
+.carrinhoLimpar-btn:hover {
     border: 1px solid var(--cor-extra);
     background-color: var(--cor-extra);
 }

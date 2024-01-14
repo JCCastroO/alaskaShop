@@ -3,7 +3,7 @@ const menuSair = document.querySelector('[data-logado]')
 
 const formNovo = document.querySelector('.principal__form');
 
-const listaProdutos = JSON.parse(localStorage.getItem('produto')) || [];
+var listaProdutos = JSON.parse(localStorage.getItem('produto')) || [];
 
 btnLogado.addEventListener('click', () => {
     menuSair.classList.toggle('hidden');
