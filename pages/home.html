@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Alaska Shop</title>
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/rodape.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/principal.css">
+</head>
+
+<body>
+
+    <div class="background hidden"></div>
+    <section class="card">
+
+    </section>
+    <section class="cardCarrinho">
+        <button class="fecharCarrinho">X</button>
+        <div class="btnsCarrinho">
+            <span class="quantidadeCarrinho"></span>
+            <span class="valorCarrinho"></span>
+            <button class="carrinhoCompra-btn">Comprar</button>
+            <button class="carrinhoLimpar-btn">Limpar carrinho</button>
+        </div>
+    </section>
+
+    <header class="cabecalho">
+        <img class="cabecalho__img" src="../images/logo.png" alt="Logo do Alaska Shop" width="200px">
+        <form class="cabecalho__formulario">
+            <input class="form-busca" type="search">
+            <button class="form-pesquisar"><img src="../images/lupa.png" alt="Lupa" width="10px"></button>
+        </form>
+        <nav class="cabecalho__navegacao">
+            <div class="carrinho">
+                <img class="carrinhoImg" src="../images/Carrinho.png" alt="Carrinho">
+                <p class="carrinhoNum"></p>
+            </div>
+            <a href="./home.html">Loja</a>
+            <a href="./contatoLogado.html">Contato</a>
+            <button class="navegacao-novoProduto">Novo Produto</button>
+            <button class="navegacao-login">Logado</button>
+        </nav>
+
+        <div class="login hidden" data-logado>
+            <form class="login__form">
+                <a href="../index.html">Sair</a>
+            </form>
+        </div>
+    </header>
+
+    <aside class="menu">
+        <button id="Todos" data-categoria>Todos</button>
+        <button id="Toucas" data-categoria>Toucas</button>
+        <button id="Cachecol" data-categoria>Cachecol</button>
+        <button id="Moletons" data-categoria>Moletons</button>
+        <button id="Camisetas" data-categoria>Camisetas</button>
+        <button id="Luvas" data-categoria>Luvas</button>
+        <button id="Calças" data-categoria>Calças</button>
+        <button id="Meias" data-categoria>Meias</button>
+        <button id="Botas" data-categoria>Botas</button>
+    </aside>
+
+    <main class="principal">
+        <section class="hidden">
+            <div class="produto">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq-owNWVIdUKBpouCfr45wo4RMGrzSk0GUnzdd39kVCVpStB-0"
+                    alt="Foto do produto" class="produto-img">
+                <h2 class="produto-titulo">Touca</h2>
+                <p class="produto-preco">10,00</p>
+                <p class="produto-categoria" hidden>Toucas</p>
+                <p class="produto-descricao" hidden>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.</p>
+                <p class="produto-quantidade" hidden>2</p>
+                <button class="produto-btn" id="1001">Verificar</button>
+            </div>
+            <div class="produto">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAgh62-C90HfRMRJGa4cgd7iKIAMrBJNor-1gWNrdzQdAIAcAo"
+                    alt="Foto do produto" class="produto-img">
+                <h2 class="produto-titulo">Cachecol</h2>
+                <p class="produto-preco">20,00</p>
+                <p class="produto-categoria" hidden>Cachecol</p>
+                <p class="produto-descricao" hidden>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.</p>
+                <p class="produto-quantidade" hidden>3</p>
+                <button class="produto-btn" id="1002">Verificar</button>
+            </div>
+            <div class="produto">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAJw8g11WGoBXZHNLpzCBj8_VuG1xRzFpw-iBH6FPGIuZCJzTq"
+                    alt="Foto do produto" class="produto-img">
+                <h2 class="produto-titulo">Moletom</h2>
+                <p class="produto-preco">30,00</p>
+                <p class="produto-categoria" hidden>Moletons</p>
+                <p class="produto-descricao" hidden>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.</p>
+                <p class="produto-quantidade" hidden>4</p>
+                <button class="produto-btn" id="1003">Verificar</button>
+            </div>
+            <div class="produto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Pyz70AOOaXBmE22nDmTaf2V0jFQ7D_wSL3wmbQ9U314Q3vCn"
+                    alt="Foto do produto" class="produto-img">
+                <h2 class="produto-titulo">Camiseta</h2>
+                <p class="produto-preco">40,00</p>
+                <p class="produto-categoria" hidden>Camisetas</p>
+                <p class="produto-descricao" hidden>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.</p>
+                <p class="produto-quantidade" hidden>5</p>
+                <button class="produto-btn" id="1004">Verificar</button>
+            </div>
+            <div class="produto">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTThxO7TUIEUK_NwSd4fYrUQtuiIwj0tYxnR9wDfw_cZ9r2pO7K"
+                    alt="Foto do produto" class="produto-img">
+                <h2 class="produto-titulo">Luva</h2>
+                <p class="produto-preco">50,00</p>
+                <p class="produto-categoria" hidden>Luvas</p>
+                <p class="produto-descricao" hidden>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.</p>
+                <p class="produto-quantidade" hidden>6</p>
+                <button class="produto-btn" id="1005">Verificar</button>
+            </div>
+            <div class="produto">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcSCeROYidIaG68IxlzkASZnmYXllutDLcMrfShixQSqEMme7u"
+                    alt="Foto do produto" class="produto-img">
+                <h2 class="produto-titulo">Calça</h2>
+                <p class="produto-preco">60,00</p>
+                <p class="produto-categoria" hidden>Calças</p>
+                <p class="produto-descricao" hidden>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.</p>
+                <p class="produto-quantidade" hidden>7</p>
+                <button class="produto-btn" id="1006">Verificar</button>
+            </div>
+            <div class="produto">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpkPzhBmiodMluU9rPBl2a0MuBz6ZD3I3CItWbnLFbglXPfpmx"
+                    alt="Foto do produto" class="produto-img">
+                <h2 class="produto-titulo">Meias</h2>
+                <p class="produto-preco">70,00</p>
+                <p class="produto-categoria" hidden>Meias</p>
+                <p class="produto-descricao" hidden>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.</p>
+                <p class="produto-quantidade" hidden>8</p>
+                <button class="produto-btn" id="1007">Verificar</button>
+            </div>
+            <div class="produto">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw4lWdLeBhMIMjh7gy70q71EvM2Wx8iBgElOahRDV_eDesD_Zc"
+                    alt="Foto do produto" class="produto-img">
+                <h2 class="produto-titulo">Botas</h2>
+                <p class="produto-preco">80,00</p>
+                <p class="produto-categoria" hidden>Botas</p>
+                <p class="produto-descricao" hidden>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.</p>
+                <p class="produto-quantidade" hidden>9</p>
+                <button class="produto-btn" id="1008">Verificar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <h2>Desenvolvido por <a href="https://www.linkedin.com/in/joão-carlos-de-castro-oliveira/">João Carlos</a> sem
+            fins lucrativos!</h2>
+    </footer>
+
+
+    <script src="../apps/home.js"></script>
+    <script src="../apps/exibirProduto.js"></script>
+    <script src="../apps/cardProdutos.js" type="module"></script>
+    <script src="../apps/carrinhoCompra.js" type="module"></script>
+</body>
+
+</html>
