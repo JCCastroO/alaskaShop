@@ -16,7 +16,7 @@ function exibirCard(produto) {
         <button class="fecharCard">X</button>
         <img src="${produto.img}" alt="Foto do produto" class="card-img">
         <h2 class="card-titulo">${produto.nome}</h2>
-        <p class="card-preco"><strong>Preço: </strong>${produto.preco}</p>
+        <p class="card-preco"><strong>Preço: </strong>R$${produto.preco}</p>
         <p class="card-descricao"><strong>Descrição: </strong><br>${produto.descricao}</p>
         <p class="card-quantidade"><strong>Quantidade: </strong>${produto.quantidade}</p>
         <button class="cardCarrinho-btn" id="${idProduto}">Adicionar ao carrinho</button>
@@ -27,6 +27,7 @@ function exibirCard(produto) {
     btnX.addEventListener('click', () => {
         cardFundo.classList.toggle('hidden');
         card.style.display = 'none';
+        nav.style.display = 'flex';
         card.innerHTML = '';
         produtosNum.innerText = listaCarrinho == 0 ? '' : `${listaCarrinho.length}`;
     })
@@ -67,6 +68,7 @@ btnVerificar.forEach(botao => {
             const idProduto = listaProdutos[i].id;
             if (idProduto == botaoId) {
                 exibirCard(listaProdutos[i]);
+                nav.style.display = 'none';
             }
 
         }

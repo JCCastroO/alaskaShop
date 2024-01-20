@@ -11,7 +11,7 @@
     --fonte: 'Roboto', sans-serif;
 }
 
-body{
+body {
     background-color: var(--cor-principal);
     font-family: var(--fonte);
     font-weight: 400;
@@ -40,8 +40,8 @@ button {
 }
 
 .background {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: 0;
     background-color: var(--cor-fonte);
     position: fixed;
@@ -60,16 +60,16 @@ button {
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 0 2rem;
-    grid-template-areas: 
-    "fechar fechar fechar fechar fechar fechar fechar fechar"
-    "img img img img titulo titulo titulo titulo"
-    "img img img img titulo titulo titulo titulo"
-    "img img img img descri descri descri descri"
-    "img img img img descri descri descri descri"
-    "img img img img quanti quanti preco preco"
-    "img img img img carrin carrin carrin carrin"
-    "img img img img carrin carrin carrin carrin"
+    padding: 2rem;
+    grid-template-areas:
+        "fechar fechar fechar fechar fechar fechar fechar fechar"
+        "img img img img titulo titulo titulo titulo"
+        "img img img img titulo titulo titulo titulo"
+        "img img img img descri descri descri descri"
+        "img img img img descri descri descri descri"
+        "img img img img quanti quanti preco preco"
+        "img img img img carrin carrin carrin carrin"
+        "img img img img carrin carrin carrin carrin"
     ;
 }
 
@@ -81,7 +81,7 @@ button {
     font-size: 14px;
     font-weight: 700;
     grid-area: fechar;
-    
+
 }
 
 .fecharCard:hover {
@@ -169,10 +169,10 @@ button {
 
 .produtoCarrinho {
     display: grid;
-    grid-template-areas: 
-    "imagem imagem imagem nome excluir excluir"
-    "imagem imagem imagem valor texto texto"
-    "imagem imagem imagem qtd btn btn"
+    grid-template-areas:
+        "imagem imagem imagem nome excluir excluir"
+        "imagem imagem imagem valor texto texto"
+        "imagem imagem imagem qtd btn btn"
     ;
     text-align: center;
     align-items: center;
@@ -250,3 +250,33 @@ button {
     border: 1px solid var(--cor-extra);
     background-color: var(--cor-extra);
 }
+
+@media (max-width: 830px) {
+    .card {
+        width: 50%;
+        height: 80%;
+        margin: 5rem 7rem;
+        grid-template-areas:
+            "fechar fechar fechar fechar"
+            "titulo titulo titulo titulo"
+            "img img img img"
+            "img img img img"
+            "img img img img"
+            "descri descri descri descri"
+            "quanti quanti preco preco"
+            "carrin carrin carrin carrin"
+        ;
+    }
+
+    .card-img {
+        width: 10rem;
+        margin: 0 auto 0 auto;
+    }
+
+    .cardCarrinho {
+        width: 70%;
+        margin: 5rem 7rem;
+    }
+}
+
+@media (max-width: 560px) {}

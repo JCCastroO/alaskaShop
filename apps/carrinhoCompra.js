@@ -1,6 +1,7 @@
 const cardFundoCarrinho = document.querySelector('.background');
 const cardCarrinho = document.querySelector('.cardCarrinho');
 const carrinho = document.querySelector('.carrinho');
+const nav = document.querySelector('.cabecalho__navegacao');
 
 var listaCarrinho = JSON.parse(sessionStorage.getItem('carrinho')) || [];
 
@@ -10,7 +11,7 @@ function exibirCarrinho(produto) {
         <div class="produtoCarrinho">
             <img src="${produto.img}" alt="Foto do produto" class="produtoImgCarrinho">
             <h2 class="produtoNomeCarrinho">${produto.nome}</h2>
-            <p class="produtoPrecoCarrinho">${produto.preco}</p>
+            <p class="produtoPrecoCarrinho">R$${produto.preco}</p>
             <p class="produto-categoria" hidden>${produto.categoria}</p>
             <p class="produtoDescricaoCarrinho">${produto.descricao}</p>
             <p class="produtoQtdCarrinho">${produto.quantidade} disponíveis</p>
@@ -42,6 +43,7 @@ function exibirCarrinho(produto) {
 carrinho.addEventListener('click', () => {
     cardFundoCarrinho.classList.toggle('hidden');
     cardCarrinho.style.display = 'flex';
+    nav.style.display = 'none';
 
     const qtdCarrinho = document.querySelector('.quantidadeCarrinho');
     qtdCarrinho.innerText = listaCarrinho == 0 ? `Produtos: ` : `Produtos: ${listaCarrinho.length}`
@@ -63,10 +65,12 @@ carrinho.addEventListener('click', () => {
     btnX.addEventListener('click', () => {
         cardFundoCarrinho.classList.toggle('hidden');
         cardCarrinho.style.display = 'none';
+        nav.style.display = 'flex';
         cardCarrinho.innerHTML = `
         <button class="fecharCarrinho">X</button>
         <div class="btnsCarrinho">
             <span class="quantidadeCarrinho"></span>
+            <span class="valorCarrinho"></span>
             <button class="carrinhoCompra-btn">Comprar</button>
             <button class="carrinhoLimpar-btn">Limpar carrinho</button>
         </div>

@@ -144,3 +144,45 @@
 .login__form a:hover {
     border: 1px solid var(--cor-extra);
 }
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 830px) {
+    .mobile {
+        display: block;
+        width: 2rem;
+    }
+
+    .cabecalho__navegacao {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--cor-secundaria);
+        border-radius: 0.5rem;
+        border: 1px solid var(--cor-extra);
+        padding: 0.5rem;
+        right: 0.5rem;
+        top: 4.5rem;
+    }
+
+    .login {
+        background-color: var(--cor-terciaria);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        position: absolute;
+        right: 7rem;
+        top: 12rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .form-busca {
+        width: 10rem;
+        height: 1.5rem;
+    }
+    .cabecalho__img {
+        width: 150px;
+    }
+}
