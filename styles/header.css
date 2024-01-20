@@ -186,3 +186,13 @@
         width: 150px;
     }
 }
+
+@media (max-width: 425px) {
+    .form-busca {
+        width: 7rem;
+        height: 1.5rem;
+    }
+    .cabecalho__img {
+        width: 130px;
+    }
+}

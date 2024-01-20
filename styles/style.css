@@ -279,4 +279,39 @@ button {
     }
 }
 
-@media (max-width: 560px) {}
+@media (max-width: 425px) {
+    .cardCarrinho {
+        margin: 5rem 3rem;
+    }
+    .produtoCarrinho {
+        display: grid;
+        grid-template-areas:
+            "imagem imagem nome excluir excluir"
+            "imagem imagem valor texto texto"
+            "imagem imagem qtd btn btn"
+        ;
+    }
+
+    .produtoImgCarrinho {
+        width: 7rem;
+    }
+
+    .produtoNomeCarrinho {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .produtoPrecoCarrinho {
+        font-size: 14px;
+        margin-right: 0.5rem;
+    }
+    
+    .produtoDescricaoCarrinho {
+        font-size: 14px;
+    }
+    
+    .produtoQtdCarrinho {
+        font-size: 14px;
+        margin-right: 0.5rem;
+    }
+}
