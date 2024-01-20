@@ -83,6 +83,7 @@ carrinho.addEventListener('click', () => {
                 const produto = listaProdutos[i];
                 if (item.nome == produto.nome) {
                     produto.quantidade = item.quantidade - 1
+                    alert(`Parabéns! Você acaba de adquirir um(a) ${item.nome}`)
                     listaCarrinho = [];
                     sessionStorage.setItem('carrinho', JSON.stringify(listaCarrinho));
                 }
